@@ -60,15 +60,41 @@
 				<h1 id="colorlib-logo"><a href="index.html">Giovanni Pietro Vitali</a></h1>
 				<span class="position"><a href="#">Associate Professor</a> in Digital Humanities</span>
 
-    <!-- Link per inviare un'email -->
-    <a href="mailto:giovannipietrovitali@gmail.com" target="_blank">
-        <img src="images/logo/mail_logo.png" alt="Send an email" width="27" height="27">
-    </a>
+<a href="mailto:giovannipietrovitali@gmail.com" target="_blank">
+    <img src="images/logo/mail_logo.png" alt="Send an email" width="27" height="27" onmouseover="showTooltip(this, 'Send an email')" onmouseout="hideTooltip()">
+</a>
 
-    <!-- Link al profilo GitHub -->
-    <a href="https://github.com/digitalkoine" target="_blank">
-        <img src="images/logo/github_logo.png" alt="Check my GitHub profile" width="23" height="23">
-    </a>
+<!-- Link al profilo università -->
+<a href="https://www.dypac.uvsq.fr/m-giovanni-vitali" target="_blank">
+    <img src="images/logo/university_logo.png" alt="Affilation profile" width="27" height="27" onmouseover="showTooltip(this, 'Affiliation profile')" onmouseout="hideTooltip()">
+</a>
+
+<!-- Link al profilo GitHub -->
+<a href="https://github.com/digitalkoine" target="_blank">
+    <img src="images/logo/github_logo.png" alt="GitHub profile" width="23" height="23" onmouseover="showTooltip(this, 'GitHub profile')" onmouseout="hideTooltip()">
+</a>
+
+<div id="tooltip" style="display: none; position: absolute; background-color: #fff; border: 1px solid #ccc; padding: 5px;">
+</div>
+
+<script>
+    function showTooltip(element, tooltipText) {
+        var tooltip = document.getElementById("tooltip");
+        tooltip.innerText = tooltipText;
+        tooltip.style.display = "block";
+        tooltip.style.left = (element.offsetLeft + 30) + "px"; // Posizione orizzontale
+        tooltip.style.top = (element.offsetTop - 20) + "px";   // Posizione verticale
+    }
+
+    function hideTooltip() {
+        var tooltip = document.getElementById("tooltip");
+        tooltip.style.display = "none";
+    }
+</script>
+
+
+
+
     <br>
     <br>
 			</div>
