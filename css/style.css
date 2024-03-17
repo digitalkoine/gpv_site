@@ -1427,3 +1427,13 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+  .small-image-container {
+    display: flex;
+    align-items: center;
+}
+
+.small-image-container img {
+    margin-right: 5px; /* Spazio tra le immagini */
+}
+
