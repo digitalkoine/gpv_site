@@ -35,5 +35,7 @@ cd giovannipietrovitali-website
 ```
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Template information: 
+© Copyright 2024 All rights reserved. Made with by Colorlib
+Distributed by ThemeWagon 
+Demo Images: Unsplash.com
