@@ -1,4 +1,6 @@
-# [Giovanni Pietro Vitali][#https://digitalkoine.github.io/gpv_site/]
+# Giovanni Pietro Vitali
+
+## Click here to visit the site: https://digitalkoine.github.io/gpv_site/
 
 This repository contains the code for the personal website of Giovanni Pietro Vitali, an Associate Professor in Digital Humanities at Versailles Saint-Quentin-en-Yvelines University – Paris-Saclay University.
 
