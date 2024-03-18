@@ -37,5 +37,5 @@ cd giovannipietrovitali-website
 ## License
 Template information: 
 © Copyright 2024 All rights reserved. Made with by Colorlib
-Distributed by ThemeWagon 
+Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
 Demo Images: Unsplash.com
