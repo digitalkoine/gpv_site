@@ -1,4 +1,4 @@
-# Giovanni Pietro Vitali
+# <a href="[https://www.dypac.uvsq.fr](https://digitalkoine.github.io/gpv_site/)" target="_blank">Giovanni Pietro Vitali</a>
 
 ## Click here to visit the site: https://digitalkoine.github.io/gpv_site/
 
@@ -36,6 +36,6 @@ cd giovannipietrovitali-website
 
 ## License
 Template information: 
-© Copyright 2024 All rights reserved. Made with by Colorlib
-Distributed by ThemeWagon 
-Demo Images: Unsplash.com
+© Copyright 2024 All rights reserved. Made with by <a href="[https://www.dypac.uvsq.fr](https://colorlib.com)" target="_blank"> Colorlib</a>
+Distributed by <a href="[https://www.dypac.uvsq.fr](https://themewagon.com)" target="_blank">ThemeWagon</a>
+Demo Images: <a href="[https://www.dypac.uvsq.fr](https://unsplash.com/it)" target="_blank">Unsplash.com</a>
