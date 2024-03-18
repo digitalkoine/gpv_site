@@ -1,6 +1,9 @@
-# <a href="[https://www.dypac.uvsq.fr](https://digitalkoine.github.io/gpv_site/)" target="_blank">Giovanni Pietro Vitali</a>
+Here's the updated README with clickable links:
 
-## Click here to visit the site: https://digitalkoine.github.io/gpv_site/
+```markdown
+# [Giovanni Pietro Vitali](https://digitalkoine.github.io/gpv_site/)
+
+## Click here to visit the site: [https://digitalkoine.github.io/gpv_site/](https://digitalkoine.github.io/gpv_site/)
 
 This repository contains the code for the personal website of Giovanni Pietro Vitali, an Associate Professor in Digital Humanities at Versailles Saint-Quentin-en-Yvelines University – Paris-Saclay University.
 
@@ -36,6 +39,8 @@ cd giovannipietrovitali-website
 
 ## License
 Template information: 
-© Copyright 2024 All rights reserved. Made with by <a href="[https://www.dypac.uvsq.fr](https://colorlib.com)" target="_blank"> Colorlib</a>
-Distributed by <a href="[https://www.dypac.uvsq.fr](https://themewagon.com)" target="_blank">ThemeWagon</a>
-Demo Images: <a href="[https://www.dypac.uvsq.fr](https://unsplash.com/it)" target="_blank">Unsplash.com</a>
+© Copyright 2024 All rights reserved. Made with by [Colorlib](https://colorlib.com)
+Distributed by [ThemeWagon](https://themewagon.com)
+Demo Images: [Unsplash.com](https://unsplash.com/it)
+```
+
