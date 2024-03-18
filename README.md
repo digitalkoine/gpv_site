@@ -1,4 +1,4 @@
-#  <a href="[https://unsplash.com/](https://digitalkoine.github.io/gpv_site/)" target="_blank">Giovanni Pietro VItali</a>
+#  <a href="https://digitalkoine.github.io/gpv_site/" target="_blank">Giovanni Pietro VItali</a>
 
 ## Click here to visit the site: https://digitalkoine.github.io/gpv_site/
 
