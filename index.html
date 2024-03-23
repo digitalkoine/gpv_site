@@ -925,14 +925,14 @@
                 if (!isNaN(this.point.name)) {
                     if (this.point.name === '2024', '2023') {
                         // Aumenta la dimensione del font per il campo 'name' 2024
-                        return '<span style="font-size: 20px">' + this.point.name + '</span>';
+                        return '<span style="font-size: 18px">' + this.point.name + '</span>';
                     } else {
                         // Mantieni la dimensione del font normale per gli altri anni
-                        return '<span style="font-size: 12px">' + this.point.name + '</span>';
+                        return '<span style="font-size: 10px">' + this.point.name + '</span>';
                     }
                 } else {
                     // Mantieni la dimensione del font normale per i non numeri
-                    return '<span style="font-size: 12px">' + this.point.name + '</span>';
+                    return '<span style="font-size: 10px">' + this.point.name + '</span>';
                 }
             }
         },
@@ -986,59 +986,141 @@
             value: 34500
         }, {
             name: 'Avalanche',
+            grant: 'CERV-2023-CITIZENS-REM - European Remembrance',
+            provider: 'European Commission (Horizon)',
+            project: 'Audio Visuals and Languages Analysis Network for Cultural Heritage in Europe - Avalanche of Democracy',
+            role: 'Co-Investigator',
+            total: '240.750€',
             parent: '2024',
             value: 240750
         }, {
             name: 'FRONT_JUSTICE',
+            grant: 'CERV-2023-CITIZENS-REM - European Remembrance',
+            provider: 'European Commission (Horizon)',
+            project: 'Audio Visuals and Languages Analysis Network for Cultural Heritage in Europe - Avalanche of Democracy',
+            role: 'Co-Investigator',
+            total: '240.750€',
             parent: '2023',
             value: 50000
         },{
             name: 'UResistant',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2023',
             value: 25000
         },{
             name: 'TRAME',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2023',
             value: 35000
         },
         {
             name: 'Vocripat',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2023',
             value: 28080 
         },{
             name: 'TianjinArSIG',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2022',
             value: 10000
         }, {
             name: 'Last Letters Cost-Extension',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2021',
             value: 30825
         }, {
             name: 'Reading Letters',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2019',
             value: 9705
         }, {
             name: 'CADdottorato',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2019',
             value: 5500
         }, {
             name: 'Training grant UCC',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2019',
             value: 1000
         }, {
             name: 'Training grant ESU',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2019',
             value: 1000
         }, {
             name: 'Last Letters',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2018',
             value: 14981
         },{
             name: 'Dual Diploma Grant',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2014',
             value: 30000
         },{
             name: 'Ph.D. mobility Grant',
+            grant: 'grant',
+            provider: 'provider',
+            project: 'project',
+            role: 'role',
+            total: '€',
+            istitution: 'EU',
             parent: '2014',
             value: 4500
         }]
@@ -1053,7 +1135,7 @@
     },
     tooltip: {
         useHTML: true,
-        pointFormat: 'The area of <b>{point.name}</b> is <b>{point.value} km<sup>2</sup></b>'
+        pointFormat: 'Project: <i><b>{point.project}</b></i><br><br>Grant amount: <b>{point.total}</b> from <b>{point.provider}</b>.<br>Grant Name: <b>{point.grant}</b><br> Role: <b>{point.role}</b>'
     }
 });
 
