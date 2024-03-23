@@ -908,122 +908,156 @@
 <script src="js/treemap_js/accessibility.js"></script>
 
 <script>
-  Highcharts.chart('container', {
+ Highcharts.chart('container', {
     series: [{
-      type: 'treemap',
-      layoutAlgorithm: 'stripes',
-      alternateStartingDirection: true,
-      borderColor: '#fff',
-      borderRadius: 6,
-      borderWidth: 2,
-      dataLabels: {
-        style: {
-          textOutline: 'none'
-        }
-      },
-      levels: [{
-        level: 1,
-        layoutAlgorithm: 'sliceAndDice',
+        type: 'treemap',
+        layoutAlgorithm: 'stripes',
+        alternateStartingDirection: true,
+        borderColor: '#fff',
+        borderRadius: 6,
+        borderWidth: 2,
         dataLabels: {
-          enabled: true,
-          align: 'left',
-          verticalAlign: 'top',
-          style: {
-            fontSize: '25px',
-            fontWeight: 'bold'
-          }
-        }
-      }],
-      data: [{
-        id: 'A',
-        name: '2024',
-        color: '#50FFB1',
-        value: 70923
-      }, {
-        id: 'B',
-        name: '2023',
-        color: '#F5FBEF',
-        value: 35759
-      }, {
-        id: 'C',
-        name: '2022',
-        color: '#A09FA8',
-        value: 39494
-      }, {
-        id: 'D',
-        name: '2021',
-        color: '#E7ECEF',
-        value: 13840
-      }, {
-        id: 'E',
-        name: '2019',
-        color: '#A9B4C2',
-        value: 31969
-      }, {
-        id: 'F',
-        name: '2018',
-        color: '#A9B4C2',
-        value: 8576
-      }, {
-        id: 'G',
-        name: '2014',
-        color: '#A9B4C2',
-        value: 22768
-      }, {
-        name: 'Add og Finnmark',
-        parent: 'A',
-        value: 70923
-      }, {
-        name: 'Nordland',
-        parent: 'A',
-        value: 35759
-      }, {
-        name: 'Trøndelag',
-        parent: 'B',
-        value: 39494
-      }, {
-        name: 'Møre og Romsdal',
-        parent: 'C',
-        value: 13840
-      }, {
-        name: 'Vestland',
-        parent: 'C',
-        value: 31969
-      }, {
-        name: 'Rogaland',
-        parent: 'C',
-        value: 8576
-      }, {
-        name: 'Viken',
-        parent: 'D',
-        value: 22768
-      }, {
-        name: 'Innlandet',
-        parent: 'D',
-        value: 49391
-      }, {
-        name: 'Vestfold og Telemark',
-        parent: 'D',
-        value: 15925
-      }, {
-        name: 'Agder',
-        parent: 'E',
-        value: 14981
-      }]
-    }],
+            style: {
+                textOutline: 'none'
+            },
+            formatter: function() {
+                // Verifica se il campo 'name' è un numero (corrispondente agli anni)
+                if (!isNaN(this.point.name)) {
+                    if (this.point.name === '2024', '2023') {
+                        // Aumenta la dimensione del font per il campo 'name' 2024
+                        return '<span style="font-size: 20px">' + this.point.name + '</span>';
+                    } else {
+                        // Mantieni la dimensione del font normale per gli altri anni
+                        return '<span style="font-size: 12px">' + this.point.name + '</span>';
+                    }
+                } else {
+                    // Mantieni la dimensione del font normale per i non numeri
+                    return '<span style="font-size: 12px">' + this.point.name + '</span>';
+                }
+            }
+        },
+        levels: [{
+            level: 1,
+            layoutAlgorithm: 'sliceAndDice',
+            dataLabels: {
+                enabled: true,
+                align: 'left',
+                verticalAlign: 'top',
+                style: {
+                    fontSize: '25px',
+                    fontWeight: 'bold'
+                }
+            }
+        }],
+        data: [{
+            id: '2024',
+            name: '2024',
+            color: '#6495ed',
+            value: 240750
+        }, {
+            id: '2023',
+            name: '2023',
+            color: '#8fbc8f',
+            value: 138080
+        }, {
+            id: '2022',
+            name: '2022',
+            color: '#daa520',
+            value: 10000
+        }, {
+            id: '2021',
+            name: '2021',
+            color: '#f0e68c',
+            value: 30825
+        }, {
+            id: '2019',
+            name: '2019',
+            color: '#ffa07a',
+            value: 17205
+        }, {
+            id: '2018',
+            name: '2018',
+            color: '#add8e6',
+            value: 176866
+        }, {
+            id: '2014',
+            name: '2014',
+            color: '#66cdaa',
+            value: 34500
+        }, {
+            name: 'Avalanche',
+            parent: '2024',
+            value: 240750
+        }, {
+            name: 'FRONT_JUSTICE',
+            parent: '2023',
+            value: 50000
+        },{
+            name: 'UResistant',
+            parent: '2023',
+            value: 25000
+        },{
+            name: 'TRAME',
+            parent: '2023',
+            value: 35000
+        },
+        {
+            name: 'Vocripat',
+            parent: '2023',
+            value: 28080 
+        },{
+            name: 'TianjinArSIG',
+            parent: '2022',
+            value: 10000
+        }, {
+            name: 'Last Letters Cost-Extension',
+            parent: '2021',
+            value: 30825
+        }, {
+            name: 'Reading Letters',
+            parent: '2019',
+            value: 9705
+        }, {
+            name: 'CADdottorato',
+            parent: '2019',
+            value: 5500
+        }, {
+            name: 'Training grant UCC',
+            parent: '2019',
+            value: 1000
+        }, {
+            name: 'Training grant ESU',
+            parent: '2019',
+            value: 1000
+        }, {
+            name: 'Last Letters',
+            parent: '2018',
+            value: 14981
+        },{
+            name: 'Dual Diploma Grant',
+            parent: '2014',
+            value: 30000
+        },{
+            name: 'Ph.D. mobility Grant',
+            parent: '2014',
+            value: 4500
+        }]
+   }],
     title: {
-      text: 'Norwegian regions and counties by area',
-      align: 'left'
+        text: 'Click or pass your finger on rectangles to know more about each grant',
+        align: 'left'
     },
     subtitle: {
-      text: 'Source: SNL',
-      align: 'left'
+        text: 'The rectangles are big as many funds consists each grant',
+        align: 'left'
     },
     tooltip: {
-      useHTML: true,
-      pointFormat: 'The area of <b>{point.name}</b> is <b>{point.value} km<sup>2</sup></b>'
+        useHTML: true,
+        pointFormat: 'The area of <b>{point.name}</b> is <b>{point.value} km<sup>2</sup></b>'
     }
-  });
+});
+
+
 </script>
 
 		
