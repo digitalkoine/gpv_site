@@ -1441,3 +1441,8 @@ body.offcanvas {
     margin-right: 5px; /* Spazio tra le immagini */
 }
 
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
